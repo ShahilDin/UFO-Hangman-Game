@@ -16,10 +16,13 @@ greet(); // greet user
 //While answer is not equal to codeword repeat
 
 while(answer!= codeword&& misses <7){
+ // Display the initial and get user input
 display_misses(misses);
 display_status(incorrect,answer);
 std::cout<<"Please enter your guess: ";
 std::cin>>letter;
+ 
+ // going through the codeword and checking if it matches the user input
 for(int i=0 ; i< codeword.size();i++){
 
  if(letter==codeword[i]){
